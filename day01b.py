@@ -1,6 +1,6 @@
 import numpy as np
 
-with open("day1_input.txt") as inp:
+with open("day01_input.txt") as inp:
     lines = inp.readlines()
 
 elfs = []
