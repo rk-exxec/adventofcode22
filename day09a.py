@@ -25,9 +25,7 @@ for lin in lines:
         delta = head_pos - tail_pos
         if np.any(abs(delta) > 1):
 
-            idx = abs(delta).argmax()
-            mov_delta = delta
-            mov_delta[idx] = np.sign(mov_delta[idx]) * 1
+            mov_delta = np.sign(delta)
             tail_pos += mov_delta
             all_tail_pos.add(tuple(tail_pos))
 
